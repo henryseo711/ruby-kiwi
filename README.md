@@ -1,2 +1,0 @@
-# ruby-kiwi
-ruby-kiwi
