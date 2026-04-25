@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Premium Landing Page | Experience the Future</title>
+  <meta name="description" content="Discover the next generation of digital experiences. Our premium landing page template offers stunning aesthetics and high performance." />
+  
+  <!-- Preload fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="glass" style="position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; padding: 2rem 6rem; background: rgba(255, 255, 255, 0.2);">
+    <nav style="display: flex; justify-content: space-between; align-items: center; max-width: 1600px; margin: 0 auto;">
+      <div class="logo" style="font-family: var(--font-heading); font-size: 1.1rem; letter-spacing: 0.3em; color: var(--text-main); font-weight: 300;">RUBY KIWI</div>
+      <div class="nav-links" style="display: flex; gap: 4rem; font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase;">
+        <a href="/index.html" style="color: var(--text-main); text-decoration: none;">홈페이지</a>
+        <a href="#features" style="color: var(--text-main); text-decoration: none;">제품</a>
+        <a href="#about" style="color: var(--text-main); text-decoration: none;">스토리</a>
+        <a href="#contact" style="color: var(--text-main); text-decoration: none;">문의</a>
+      </div>
+      <div style="display: flex; gap: 2rem; align-items: center;">
+        <div class="lang-switcher" style="font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase;">
+          <a href="/index.html" style="color: var(--text-main); text-decoration: none; font-weight: 600;">KO</a>
+          <span style="margin: 0 0.5rem; opacity: 0.3;">/</span>
+          <a href="/en.html" style="color: var(--text-muted); text-decoration: none;">EN</a>
+        </div>
+        <a href="#" class="btn btn-primary" style="padding: 0.75rem 2rem; background: var(--text-main); color: #fff;">주문하기</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero" style="min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; background: var(--background); position: relative; overflow: hidden;">
+      <!-- Left Content -->
+      <div style="display: flex; flex-direction: column; justify-content: center; padding: 0 10% 10rem 10%; z-index: 2;">
+        <span style="display: block; font-size: 0.65rem; letter-spacing: 0.5em; text-transform: uppercase; color: var(--primary); margin-bottom: 2.5rem;">Pure Essence</span>
+        <h1 style="font-size: clamp(3rem, 6vw, 5.5rem); margin-bottom: 3rem;">본연의 가치를 담다</h1>
+        <p style="font-size: 1rem; color: var(--text-muted); max-width: 450px; line-height: 2.2; font-weight: 200; letter-spacing: 0.02em;">
+          인위적인 가공을 거치지 않은, 자연 그대로의 순수함을 전달합니다.<br>
+          아만(Aman)의 고요한 미학을 담은 프리미엄 루비 키위.
+        </p>
+      </div>
+      
+      <!-- Right Image (Full Bleed) -->
+      <div style="position: relative; height: 100%; overflow: hidden;">
+        <img src="/ruby-kiwi.png" alt="Premium Ruby Kiwi" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.95);" />
+        <!-- Terroir Box (Architectural Element with Glassmorphism) -->
+        <div class="glass" style="position: absolute; bottom: 4rem; left: -2rem; padding: 4rem; max-width: 320px; z-index: 3;">
+          <span style="display: block; font-size: 0.55rem; letter-spacing: 0.4em; text-transform: uppercase; color: var(--primary); margin-bottom: 1.5rem;">Origin</span>
+          <p style="font-size: 0.8rem; color: var(--text-main); line-height: 1.8; font-weight: 300;">최적의 토양과 기후에서 자라난 자연의 결실. 그 깊은 향과 맛을 전합니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" style="background: #ffffff;">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 6rem;">
+          <span style="display: block; font-size: 0.75rem; letter-spacing: 0.4em; text-transform: uppercase; color: var(--primary); margin-bottom: 1rem;">Exceptional Quality</span>
+          <h2 style="font-size: 3rem;">왜 루비 키위인가?</h2>
+        </div>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem;">
+          <div style="text-align: center;">
+            <div style="width: 48px; height: 48px; margin: 0 auto 2rem; color: var(--primary);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">압도적인 당도</h3>
+            <p style="color: var(--text-muted); line-height: 1.8; font-weight: 300;">일반 키위보다 20% 이상 높은 평균 20브릭스 이상의 고당도를 자랑합니다.</p>
+          </div>
+          
+          <div style="text-align: center;">
+            <div style="width: 48px; height: 48px; margin: 0 auto 2rem; color: var(--primary);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+            </div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">풍부한 영양</h3>
+            <p style="color: var(--text-muted); line-height: 1.8; font-weight: 300;">항산화 성분인 안토시아닌이 풍부하여 면역력 강화와 피로 회복에 탁월합니다.</p>
+          </div>
+          
+          <div style="text-align: center;">
+            <div style="width: 48px; height: 48px; margin: 0 auto 2rem; color: var(--primary);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.42 4.58a5 5 0 00-7.07 0l-1.35 1.35-1.35-1.35a5 5 0 00-7.07 7.07l1.35 1.35L12 20.24l7.07-7.07 1.35-1.35a5 5 0 000-7.07z"/></svg>
+            </div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">유니크한 비주얼</h3>
+            <p style="color: var(--text-muted); line-height: 1.8; font-weight: 300;">중심부의 선명한 루비 빛깔이 식탁의 품격을 높여주는 시각적 즐거움을 선사합니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer style="padding: 6rem 0; background: #fdfcf9; border-top: 1px solid rgba(0, 0, 0, 0.05); text-align: center;">
+    <div class="container">
+      <div style="font-family: var(--font-heading); font-size: 1rem; letter-spacing: 0.2em; color: var(--text-main); margin-bottom: 2rem;">RUBY KIWI</div>
+      <p style="font-size: 0.75rem; color: var(--text-muted); letter-spacing: 0.05em; font-weight: 300;">&copy; 2026 Premium Ruby Kiwi Sanctuary. Crafted for the discerning palate.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@200;300;400&display=swap');
+
+:root {
+  --primary: #7c6c4c; /* More muted bronze */
+  --primary-hover: #5a4e37;
+  --secondary: #e5e0d8; /* Softer sand */
+  --background: #faf9f6; /* Very light, airy off-white */
+  --surface: #ffffff;
+  --text-main: #1c1c1c;
+  --text-muted: #757575;
+  --glass: rgba(250, 249, 246, 0.85);
+  --glass-border: rgba(0, 0, 0, 0.03);
+  --shadow-subtle: 0 10px 40px rgba(0, 0, 0, 0.02);
+  
+  --font-main: 'Inter', sans-serif;
+  --font-heading: 'Cormorant Garamond', serif;
+  --transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Typography & Line Breaks */
+body {
+  font-family: var(--font-main);
+  background-color: var(--background);
+  color: var(--text-main);
+  line-height: 1.6;
+  overflow-x: hidden;
+  word-break: keep-all; /* Prevent breaking Korean words in middle */
+  overflow-wrap: break-word;
+}
+
+/* Refined Minimalist Glassmorphism */
+.glass {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2.5rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 400;
+  text-decoration: none;
+  transition: var(--transition);
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: var(--primary-hover);
+  transform: translateY(-1px);
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  font-weight: 300;
+  line-height: 1.05;
+  color: var(--text-main);
+  letter-spacing: -0.01em;
+}
+
+.text-gradient {
+  color: var(--text-main);
+  letter-spacing: -0.02em;
+}
+
+/* Layout */
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 6rem;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 4rem;
+  }
+}
+
+@media (max-width: 968px) {
+  .hero {
+    grid-template-columns: 1fr !important;
+    align-items: flex-start !important;
+  }
+  .hero > div:first-child {
+    padding: 10rem 2rem 4rem 2rem !important;
+    text-align: center;
+    align-items: center;
+  }
+  .hero > div:first-child p {
+    margin: 0 auto;
+  }
+  .hero > div:last-child {
+    height: 50vh !important;
+  }
+}
+
+/* Animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+section {
+  padding: 10rem 0;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 6rem 0;
+  }
+}
+
+/* Hero Specific Enhancements */
+.hero-image-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+  margin-top: 4rem;
+}
+
+.hero-image-main {
+  grid-column: 2 / 10;
+  height: 70vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-image-secondary {
+  grid-column: 9 / 12;
+  height: 40vh;
+  margin-top: -15vh;
+  overflow: hidden;
+  background: var(--secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 1.5rem 2rem !important;
+  }
+  .nav-links {
+    display: none !important; /* Hide links on mobile for simplicity in this demo */
+  }
+}
